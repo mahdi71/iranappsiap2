@@ -293,8 +293,8 @@ public class IabHelper {
             }
         };
 
-        Intent serviceIntent = new Intent("ir.cafebazaar.pardakht.InAppBillingService.BIND");
-        serviceIntent.setPackage("com.farsitel.bazaar");
+        Intent serviceIntent = new Intent("ir.tgbs.iranapps.billing.InAppBillingService.BIND");
+        serviceIntent.setPackage("ir.tgbs.android.iranapp");
         try {
             if (!mContext.getPackageManager().queryIntentServices(serviceIntent, 0).isEmpty()) {
                 // service available to handle that Intent
